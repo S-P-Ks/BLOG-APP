@@ -70,7 +70,7 @@ app.use(
       maxAge: 3600000,
       sameSite: "none",
       secure: process.env.NODE_ENV == "development" ? false : true,
-      httpOnly: true,
+      // httpOnly: true,
     },
     store: sessionStorage,
   })
