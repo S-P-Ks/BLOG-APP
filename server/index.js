@@ -69,7 +69,7 @@ app.use(
     cookie: {
       maxAge: 3600000,
       sameSite: "none",
-      secure: process.env.NODE_ENV == "development" ? false : true,
+      secure: "auto",
       // httpOnly: true,
     },
     store: sessionStorage,
