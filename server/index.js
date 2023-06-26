@@ -67,7 +67,7 @@ app.use(
     saveUninitialized: false,
     cookie: {
       maxAge: 3600000,
-      sameSite: "none",
+      sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
     },
     store: sessionStorage,
   })
