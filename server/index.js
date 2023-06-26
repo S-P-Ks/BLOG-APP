@@ -22,6 +22,7 @@ app.use(
     origin: `${process.env.CLIENT_URL}`,
     methods: "GET,POST,PUT,DELETE",
     credentials: true,
+    allowedHeaders: ["Content-Type"],
   })
 );
 
