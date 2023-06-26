@@ -68,6 +68,7 @@ app.use(
     cookie: {
       maxAge: 3600000,
       sameSite: process.env.NODE_ENV === "development" ? "lax" : "none",
+      secure: process.env.NODE_ENV === "development" ? false : true,
     },
     store: sessionStorage,
   })
